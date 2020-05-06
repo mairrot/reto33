@@ -1,0 +1,39 @@
+
+package reto3;
+import java.util.Scanner;
+public class Reto3 {
+static int clave;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("ingrese la clave a la zona geogrica que pertenece");
+		int clave = scan.nextInt();
+		System.out.println("ingrese la cantidad de minutos que utilizo");
+		int minutos=scan.nextInt();
+		
+		switch (clave){
+			case 12:
+				System.out.println("Ameria del norte su costo a pagar es: " + minutos*2);
+				break;
+			case 15:
+				System.out.println("America central su costo a pagar es: " + minutos*2.2);
+				break;
+			case 18:
+				System.out.println("America del sur su costo a pagar es: " + minutos*4.5);
+				break;
+			case 19:
+				System.out.println("Europa su costo a pagar es: " + minutos*3.5);
+				break;
+			case 23:
+				System.out.println("Asia su costo a pagar es: " + minutos*6);
+				break;
+			case 25:
+				System.out.println("Africa su costo a pagar es: " + minutos*6);
+				break;
+			case 29:
+				System.out.println("Oceania su costo a pagar es: " + minutos*5);
+				break;
+		}
+	}
+
+}
